@@ -11,6 +11,8 @@
     width: 1148px;
 }
 
+/* header */
+
 .page_header {
     fill: #E8E8E8;
     width: 100%;
@@ -129,109 +131,9 @@
     margin: 0 33px 0 33px;
 }
 
-.brand {
-    height: 764px;
-    background: #F1E4E6;
-    display: flex;
-    margin-bottom: 65px;
-}
-
-.top_text {
-    font-family: Lato;
-    font-style: normal;
-    text-transform: uppercase;
-    font-weight: 900;
-    font-size: 48px;
-    line-height: 58px;
-    color: #222222;
-}
-
-.bottom_text {
-    font-family: Lato;
-    font-style: normal;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 39px;
-    color: #222222;
-}
-
-.bottom_text_fashion {
-    text-transform: uppercase;
-    font-family: Lato;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 39px;
-    color: #c05656;
-}
-
-.brand_box {
-    display: flex;
-    margin-top: 290px;
-    margin-right: 331px;
-    position: relative;
-}
-
-.brand_box_wrp::before {
-    content: "";
-    display: block;
-    width: 12px;
-    height: 92px;
-    background-color: #F16D7F;
-    position: absolute;
-    top: 0;
-    left: -28px;
-}
-
-
-.background_img {
-    position: relative;
-
-}
-
-.midle_card {
-    position: absolute;
-
-}
 
 .midle_card_margin {
     margin: 0 30px 0 30px;
-}
-
-.midle_card_text_top {
-
-    z-index: 1;
-    font-family: Lato;
-    position: absolute;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    color: #FFFFFF;
-}
-
-.midle_card_text_bottom {
-    position: absolute;
-    z-index: 1;
-    font-family: Lato;
-    margin: 50px 0px 0px 0px;
-    font-size: 23px;
-    line-height: 20px;
-    text-align: center;
-    color: #F16D7F;
-}
-
-.midle_card_box {
-    display: flex;
-    margin-bottom: 30px;
-    flex-wrap: wrap;
-}
-
-.card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: linear-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)),
 }
 
 .accesories {
@@ -273,12 +175,131 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .text_link_card {
     display: flex;
     align-items: center;
+}
+
+.text_feture_link {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 48px;
+}
+
+/* end of header part */
+
+/* end of brand part */
+
+.brand {
+    height: 764px;
+    background: #F1E4E6;
+    display: flex;
+    margin-bottom: 65px;
+}
+
+.brand_box {
+    display: flex;
+    margin-top: 290px;
+    margin-right: 331px;
+    position: relative;
+}
+
+.brand_box_wrp::before {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 92px;
+    background-color: #F16D7F;
+    position: absolute;
+    top: 0;
+    left: -28px;
+}
+
+.top_text {
+    font-family: Lato;
+    font-style: normal;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+    color: #222222;
+}
+
+.bottom_text {
+    font-family: Lato;
+    font-style: normal;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    color: #222222;
+}
+
+.bottom_text_fashion {
+    text-transform: uppercase;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    color: #c05656;
+}
+
+/* end of brand part */
+
+/* midle_content */
+
+.midle_card_box {
+    display: flex;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7));
+}
+
+.midle_card {
+    position: absolute;
+}
+
+.midle_card_text_top {
+    z-index: 1;
+    font-family: Lato;
+    position: absolute;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.midle_card_text_bottom {
+    position: absolute;
+    z-index: 1;
+    font-family: Lato;
+    margin: 50px 0px 0px 0px;
+    font-size: 23px;
+    line-height: 20px;
+    text-align: center;
+    color: #F16D7F;
+}
+
+.background_img {
+    position: relative;
+}
+
+/* end of midle_content part */
+
+/* fetured_items */
+
+.fetured_items {
+    margin-bottom: 48px;
 }
 
 .text_feture_h3 {
@@ -288,23 +309,13 @@
     font-weight: 400;
 }
 
-.text_feture_link {
-    text-decoration: none;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 48px;
-
-}
-
 .text_feture_p {
     font-size: 14px;
     line-height: 17px;
     color: #9F9F9F;
 }
 
-.fetured_items {
-    margin-bottom: 48px;
-}
+/* end of fetured_items part */
 
 /* products */
 .products {
@@ -320,19 +331,17 @@
     box-sizing: border-box;
     background-color: #F8F8F8;
     margin-bottom: 30px;
-
 }
 
 .products_item_img {
     width: 360px;
     height: 420px;
     margin-bottom: 25px;
-
 }
 
 .products_item_text_box {
     width: 360px;
-    }
+}
 
 .text_box_header {
     font-size: 13px;
@@ -347,14 +356,87 @@
     line-height: 17px;
     color: #5D5D5D;
     margin: 12px 0 18px 0;
-
-
 }
 
 .text_box_price {
     font-size: 16px;
     line-height: 19px;
-
     color: #F16D7F;
-
 }
+
+.btn_products {
+    width: 212px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 95px;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F26376;
+    background-color: white;
+    border: 1px solid #F26376;
+    padding: 14.5px;
+    box-sizing: border-box;
+}
+
+.btn_products:hover {
+    background-color: #F26376;
+    color: white;
+}
+
+.btn_products:active {
+    background-color: white;
+    color: #F26376;
+}
+
+/* end of products part */
+
+/* features */
+
+.features {
+    max-width: 1600px;
+    height: 341px;
+    background-color: #222224;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.feature_item {
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+}
+
+.feature_item_top {
+    font-size: 19.96px;
+    line-height: 24px;
+    color: #FBFBFB;
+    margin-top: 28px;
+    margin-bottom: 16px;
+}
+
+.feature_item_bottom {
+    font-size: 13.972px;
+    line-height: 17px;
+    text-align: center;
+    color: grey;
+}
+
+/* end of features part*/
+
+/* footer */
+.footer_top {
+    max-width: 1600px;
+    height: 448px;
+    background-image: url(img/photo\ subscribe.png);
+}
+
+.footer_bottom {
+    max-width: 1600px;
+    height: 79px;
+    background-color: #222224;
+}
+
+
+/* end of footer part*/
