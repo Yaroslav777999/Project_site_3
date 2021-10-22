@@ -4,9 +4,11 @@
 }
 
 .container {
+    /* max-width: 1600px; */
+}
+.cont {
     max-width: 1600px;
 }
-
 .container1140 {
     width: 1148px;
 }
@@ -298,7 +300,7 @@
     height: 3px;
     background-color: #fff;
     position: relative;
-        margin-left: 0px;
+    margin-left: 0px;
 }
 
 .menu_btn_item::before,
@@ -757,15 +759,23 @@
 }
 
 .pagination {
-    /* border: 1px solid black; */
-    /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
-    width: 284px;
+        width: 284px;
     height: 44px;
     margin-top: 47px;
     margin-bottom: 96px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.border_pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:283px;
+    height: 44px;
+    border: 1px solid #EBEBEB;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
 }
 
 .ul_pagination {
@@ -784,9 +794,7 @@
 .ul_pagination_num_1 {
     font-weight: 300;
     font-size: 16px;
-    line-height: 19px;
-
-    color: #EF5B70;
+       color: #EF5B70;
 
 }
 
@@ -795,16 +803,16 @@
 
 }
 
-.ul_pagination_svg {
+/* .ul_pagination_svg {
     margin: 0 0 0 0;
-}
+} */
 
 /* end of products part */
 
 /* features */
 
 .features {
-    max-width: 1600px;
+    /* max-width: 1600px; */
     height: 341px;
     background-color: #222224;
     display: flex;
@@ -839,9 +847,10 @@
 
 /* footer */
 .footer_top {
-    max-width: 1600px;
+    /* max-width: 1600px; */
     height: 448px;
     background-image: url(../img/photo_subscribe.png);
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -921,7 +930,7 @@
 }
 
 .footer_bottom {
-    max-width: 1600px;
+    /* max-width: 1600px; */
     height: 79px;
     background-color: #222224;
     display: flex;
@@ -1126,9 +1135,12 @@ button:focus_visible {
     width: 80px;
     border: none;
     background-color: transparent;
-
 }
+.filter_icon::after {
+    content: url(../img/women_svg.svg);
+    margin: 0 0 0 10px;
 
+} 
 .list_size_wrp_display {
     display: none;
 }
@@ -1210,7 +1222,7 @@ button:focus_visible {
     z-index: 1;
     display: none;
     flex-direction: column;
-    margin: 5px 0 0 0;
+    margin: 20px 0 0px 145px;
     padding: 9.5px 9.5px 9.5px 31px;
     box-sizing: border-box;
     background-color: #fff;
@@ -1228,7 +1240,7 @@ button:focus_visible {
     display: none;
 }
 
-.list_size_item:nth_child(1):checked~.list_size_item_title:nth_child(2):before,
+.list_size_item:checked~.list_size_item_title:before,
 .list_size_item:nth_child(3):checked~.list_size_item_title:nth_child(4):before,
 .list_size_item:nth_child(5):checked~.list_size_item_title:nth_child(6):before,
 .list_size_item:nth_child(7):checked~.list_size_item_title:nth_child(8):before {
@@ -1301,15 +1313,18 @@ button:focus_visible {
 /* product */
 
 .slider {
+
+    margin-bottom: -49px;
     height: 777px;
-    margin: 0;
     padding: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: #F7F7F7;
-    /* margin-bottom: 664px; */
+}
 
+.img_slider {
+    margin-bottom: 43px;
 }
 
 .slider_switch_left {
@@ -1337,16 +1352,99 @@ button:focus_visible {
     fill: black;
 }
 
+
+
+.products_margin {
+    margin-bottom: 128px;
+    margin-top: 128px;
+}
+
+/* women collection */
 .women_collection {
+        box-sizing: border-box;
+    padding: 64px 0 64px 0;
     width: 1141px;
     height: 601px;
     border: 1px solid #EAEAEA;
     background-color: white;
-
-    top: 927px;
-    left: 915px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.products_margin {
-    margin-bottom: 128px;
-    margin-top: 128px;
+
+.women_collection_header {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F16D7F;
+    text-transform: uppercase;
+    .
+}
+
+.women_collection_stick {
+    width: 63px;
+    height: 3px;
+    background-color: #F16D7F;
+    margin-bottom: 12px;
+    margin-top: 12px;
+}
+
+.women_collection_moschino {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: #4D4D4D;
+    margin-bottom: 48px;
+}
+
+.women_collection_text {
+    width: 555px;
+    margin-bottom: 32px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+
+    color: #5E5E5E;
+}
+
+.women_collection_price {
+    text-align: center;
+    width: 642px;
+    height: 64px;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #EF5B70;
+    border-bottom: 1px solid #EAEAEA;
+    margin-bottom: 64px;
+}
+
+.choose_wrp {
+    display: flex;
+    margin-bottom: 48px;
+    width: 373px;
+}
+
+.choose_item {
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+}
+.choose_item::after {
+    content: url(../img/women_svg.svg);
+    margin-left: 9px;
+    }
+
+.btn_cart {
+    width: 212px;
+        display: flex;
+    justify-content: center;
+       font-size: 16px;
+    line-height: 19px;
+    color: #F26376;
+    background-color: white;
+    border: 1px solid #F26376;
+    padding: 14.5px;
+    box-sizing: border-box;
 }
