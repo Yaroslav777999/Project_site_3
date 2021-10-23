@@ -6,9 +6,11 @@
 .container {
     /* max-width: 1600px; */
 }
+
 .cont {
     max-width: 1600px;
 }
+
 .container1140 {
     width: 1148px;
 }
@@ -759,7 +761,7 @@
 }
 
 .pagination {
-        width: 284px;
+    width: 284px;
     height: 44px;
     margin-top: 47px;
     margin-bottom: 96px;
@@ -767,15 +769,16 @@
     justify-content: center;
     align-items: center;
 }
+
 .border_pagination {
     display: flex;
     align-items: center;
     justify-content: center;
-    width:283px;
+    width: 283px;
     height: 44px;
     border: 1px solid #EBEBEB;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    
+
 }
 
 .ul_pagination {
@@ -794,7 +797,7 @@
 .ul_pagination_num_1 {
     font-weight: 300;
     font-size: 16px;
-       color: #EF5B70;
+    color: #EF5B70;
 
 }
 
@@ -1136,11 +1139,13 @@ button:focus_visible {
     border: none;
     background-color: transparent;
 }
+
 .filter_icon::after {
     content: url(../img/women_svg.svg);
     margin: 0 0 0 10px;
 
-} 
+}
+
 .list_size_wrp_display {
     display: none;
 }
@@ -1361,7 +1366,7 @@ button:focus_visible {
 
 /* women collection */
 .women_collection {
-        box-sizing: border-box;
+    box-sizing: border-box;
     padding: 64px 0 64px 0;
     width: 1141px;
     height: 601px;
@@ -1431,20 +1436,204 @@ button:focus_visible {
     line-height: 17px;
     color: #6F6E6E;
 }
+
 .choose_item::after {
     content: url(../img/women_svg.svg);
     margin-left: 9px;
-    }
+}
 
 .btn_cart {
     width: 212px;
-        display: flex;
+    display: flex;
     justify-content: center;
-       font-size: 16px;
+    font-size: 16px;
     line-height: 19px;
     color: #F26376;
     background-color: white;
     border: 1px solid #F26376;
     padding: 14.5px;
     box-sizing: border-box;
+}
+
+.btn_cart:hover {
+    background-color: #F26376;
+    color: white;
+}
+
+.btn_cart:active {
+    background-color: white;
+    color: #F26376;
+}
+
+.btn_svg {
+    fill: #F26376;
+}
+
+.btn_cart:hover .btn_svg {
+    fill: white;
+}
+
+.btn_cart:active .btn_svg {
+    fill: #F26376;
+}
+
+/* shoping_cart */
+.cart_box {
+    padding: 96px 0px 250px 230px;
+    display: flex;
+    box-sizing: border-box;
+    max-width: 1600px;
+}
+
+.shoping_cart {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.cart_item {
+    width: 652px;
+    height: 306px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #EAEAEA;
+    box-shadow: 4px 4px 11px 6px rgba(34, 60, 80, 0.2);
+    margin-left: 0;
+    margin-bottom: 40px;
+    justify-content: space-between;
+}
+
+.left_cart {
+    margin-left: 0;
+}
+
+.cart_item_text_box {
+    position: relative;
+    padding: 22px 97px 62px 31px;
+    box-sizing: border-box;
+    margin-left: 0;
+}
+
+.cart_img {
+    margin-left: 0;
+}
+
+.text_mango_ {
+    font-size: 24px;
+    line-height: 29px;
+    color: #222222;
+}
+
+.text_mango {
+    font-size: 24px;
+    line-height: 29px;
+    color: #222222;
+    margin-bottom: 42px;
+}
+
+.text_price {
+    font-size: 22px;
+    line-height: 26px;
+    color: #575757;
+    margin-top: 6px;
+    margin-left: 0;
+}
+
+.text_price_red {
+    color: #F26376;
+}
+
+.text_price_border {
+    text-align: center;
+    width: 44px;
+    height: 24px;
+    font-size: 22px;
+    line-height: 26px;
+    color: #575757;
+    margin-top: 6px;
+    border: 1px solid #EAEAEA;
+}
+
+.quantity {
+    display: flex;
+}
+
+.btn_cart_margin {
+    margin-top: 72px;
+    width: 239px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    color: #F26376;
+    background-color: white;
+    border: 1px solid #A4A4A4;
+    padding: 17px 40px;
+    font-weight: 300;
+    box-sizing: border-box;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+
+.btn_cart_margin:hover {
+    background-color: #F26376;
+    color: white;
+}
+
+.btn_cart_margin:active {
+    background-color: white;
+    color: #F26376;
+}
+
+.cross {
+    position: absolute;
+    top: 26px;
+    left: 315px;
+}
+
+.right_cart {
+    margin-left: 129px;
+    width: 360px;
+    height: 272px;
+}
+
+.shoppin_adress {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+    margin-bottom: 20px;
+}
+
+.input_text_cart {
+    width: 100%;
+    height: 45px;
+    border: 1px solid #A4A4A4;
+    margin-bottom: 20px;
+}
+
+.input_text_cart::-webkit-input-placeholder {
+    color: #B1B1B1;
+    padding: 13px 17px;
+    box-sizing: border-box;
+}
+
+.quote_btn {
+    width: 101px;
+    height: 35px;
+    text-transform: uppercase;
+    background-color: #fff;
+    border: 1px solid #A4A4A4;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 13px;
+}
+
+.quote_btn:hover {
+    background-color: #F26376;
+    color: white;
+}
+
+.quote_btn:active {
+    background-color: white;
+    color: #F26376;
 }
