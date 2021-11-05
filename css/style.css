@@ -18,11 +18,13 @@
 /* header */
 
 .page_header {
+    padding: 0 10px;
+    box-sizing: border-box;
     position: relative;
     fill: #E8E8E8;
     width: 100%;
     background: #222222;
-    height: 75px;
+    min-height: 75px;
     display: flex;
     align-items: center;
 }
@@ -30,6 +32,7 @@
 .page_header_container {
 
     max-width: 1140px;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -423,22 +426,37 @@
 }
 
 .brand_wrp_img {
-    margin-right: 100px;
+    /* margin-right: 100px; */
+
+
 }
 
 .brand {
 
-    height: 764px;
+
     background: #F1E4E6;
     display: flex;
     margin-bottom: 65px;
     justify-content: center;
 }
 
-.brand_box {
+.brand_box_wrap {
+    max-width: 405px;
+    width: 100%;
+    display: block;
     display: flex;
-    margin-top: 290px;
-    margin-right: 331px;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.brand_box {
+    max-width: 405px;
+    width: 100%;
+    display: block;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     position: relative;
 }
 
@@ -452,16 +470,27 @@
 
 }
 
-.brand_box_wrp::before {
+.brand_box::before {
     content: "";
     display: block;
     width: 12px;
     height: 92px;
     background-color: #F16D7F;
     position: absolute;
-    top: 0;
+    /* top: 335px; */
     left: -28px;
 }
+
+/* .brand_box_wrap::before {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 92px;
+    background-color: #F16D7F;
+    position: absolute;
+    top: 319px;
+    left: -28px;
+} */
 
 .brand_box_wrp:hover {
     transform: rotate(360deg);
@@ -469,6 +498,7 @@
 }
 
 .top_text {
+    margin: 0;
     font-family: Lato;
     font-style: normal;
     text-transform: uppercase;
@@ -479,6 +509,8 @@
 }
 
 .bottom_text {
+    margin: 0;
+    display: block;
     font-family: Lato;
     font-style: normal;
     text-transform: uppercase;
@@ -489,6 +521,7 @@
 }
 
 .bottom_text_fashion {
+    /* display: block; */
     text-transform: uppercase;
     font-family: Lato;
     font-style: normal;
@@ -504,7 +537,7 @@
 
 .categories {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
     width: 100%;
@@ -520,7 +553,7 @@
     flex-wrap: wrap;
     width: 360px;
     min-height: 260px;
-    margin: 0 30px 30px 0;
+    margin: 0 0px 30px 0;
     background-size: cover;
     background-position: center;
     transition: transform 1s;
@@ -873,7 +906,8 @@
 
 /* features */
 .features_wrp {
-    min-width: 1140px;
+    max-width: 1140px;
+    width: 100%;
     height: 341px;
     background-color: #222224;
     display: flex;
@@ -890,7 +924,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 230px 0 230px;
+    /* padding: 0 230px 0 230px; */
     box-sizing: border-box;
 }
 
@@ -923,12 +957,25 @@
     width: 100%;
 }
 
+.footer_bottom_wrp {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    box-sizing: border-box;
+
+}
+
 .footer_wrp {
     max-width: 1140px;
     width: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    padding: 0 10px;
+    box-sizing: border-box;
 
 }
 
@@ -1000,7 +1047,7 @@
 .subscribe_btn {
 
     color: #FFFFFF;
-    padding: 20px;
+    padding: 16px;
     box-sizing: border-box;
     border: none;
     border-radius: 0 20px 20px 0;
@@ -1022,7 +1069,7 @@
 
 .footer_bottom {
     /* max-width: 1600px; */
-    height: 79px;
+    min-height: 79px;
     background-color: #222224;
     display: flex;
     justify-content: space-between;
@@ -1225,7 +1272,7 @@ a {
 
 .other_filters_wrp {
     display: flex;
-    
+
 }
 
 .list_size_margin {
@@ -1431,7 +1478,7 @@ button:focus_visible {
 .slider {
 
     margin-bottom: -49px;
-    height: 777px;
+    min-height: 777px;
     padding: 0;
     display: flex;
     align-items: center;
@@ -1526,7 +1573,7 @@ button:focus_visible {
 
 .women_collection_price {
     text-align: center;
-    width: 642px;
+    max-width: 642px;
     height: 64px;
     font-weight: 300;
     font-size: 24px;
@@ -1547,6 +1594,7 @@ button:focus_visible {
     font-size: 14px;
     line-height: 17px;
     color: #6F6E6E;
+    text-transform: uppercase;
 }
 
 .choose_item::after {
@@ -1579,6 +1627,7 @@ button:focus_visible {
 
 .btn_svg {
     fill: #F26376;
+    margin-right: 23px;
 }
 
 .btn_cart:hover .btn_svg {
@@ -1592,10 +1641,12 @@ button:focus_visible {
 /* shoping_cart */
 .cart_box {
     margin: 0 auto;
-    padding: 96px 0px 250px 230px;
+    padding: 96px 0px 250px 0px;
     display: flex;
+    justify-content: space-between;
     box-sizing: border-box;
-    max-width: 1600px;
+    max-width: 1140px;
+    width: 100%;
     flex-wrap: wrap;
 }
 
@@ -1605,7 +1656,7 @@ button:focus_visible {
 }
 
 .cart_item {
-    width: 652px;
+    max-width: 652px;
     height: 306px;
     display: flex;
     flex-wrap: wrap;
@@ -1656,7 +1707,7 @@ button:focus_visible {
 
 .mango_number {
     width: 44px;
-    margin-left: 24px;
+    margin-left: 25px;
     padding: 0 0 0 6px;
     box-sizing: border-box;
 }
@@ -1724,7 +1775,7 @@ button:focus_visible {
 }
 
 .right_cart {
-    margin-left: 129px;
+    /* margin-left: 129px; */
     width: 360px;
     height: 272px;
 }
@@ -1911,6 +1962,7 @@ button:focus_visible {
 .list_margin {
     margin-bottom: 16px;
     list-style-type: none;
+
 }
 
 .fa-check {
@@ -1955,4 +2007,448 @@ button:focus_visible {
     color: #FFFFFF;
     fill: white;
     box-shadow: none;
+}
+
+.mar {
+    margin-right: 20px;
+}
+
+.footer_wrp_bottom {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    /* flex-direction: column-reverse; */
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1080px) {
+    body {
+        outline: 2px solid red;
+    }
+
+    .categories_item {
+        max-width: 232px;
+        width: 100%;
+        min-height: 167px;
+        margin: 0 19px 0 0;
+    }
+
+    .categories_item:nth-child(3) {
+        margin: 0;
+        min-height: 167px;
+    }
+
+    .categories_item:last-child {
+        margin: 19px 0 0 0;
+        min-height: 116px;
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+
+    body {
+        /* outline: 2px solid red; */
+    }
+
+    .products {
+        justify-content: center;
+    }
+
+    .products_item {
+        margin: 10px;
+    }
+
+    /*     .brand_wrp {
+        justify-content: center;
+    } */
+    .brand_wrp_img {
+        /* width: 50%; */
+        /* outline: 1px solid green;  */
+    }
+
+    /*     .brand_wrp_img img {
+        width: 100%;
+        height:100%;
+    } */
+    .brand_box {
+        margin-right: 20px;
+    }
+
+    .btn_products_wrp {
+        margin: 50px 0 0 0;
+    }
+    .breadcrumbs_box {
+        padding: 0;
+    }
+
+    .img_slider {
+        max-width: 361px;
+    width: 100%;
+    }
+    .women_collection_text {
+        width: 326px;
+    }
+
+}
+
+/* ========== @media 768px =============  */
+
+@media only screen and (max-width: 768px) {
+    .page_header {
+        padding: 0 32px;
+    }
+
+    .brand {
+        width: 100%;
+        min-height: 368px;
+    }
+
+    .brand_box::before {
+        top: 134px;
+    }
+
+    .top_text {
+        font-size: 44px;
+    }
+
+    .bottom_text,
+    .bottom_text_fashion {
+        font-size: 24px;
+    }
+
+    .categories {
+        margin: 0 0 154px 0;
+        box-sizing: border-box;
+    padding: 0 16px 0 15px;
+    }
+
+    .categories_item {
+        max-width: 232px;
+        width: 100%;
+        min-height: 167px;
+        margin: 0 19px 0 0;
+    }
+
+    .categories_item:nth-child(3) {
+        margin: 0;
+        min-height: 167px;
+    }
+
+    .categories_item:last-child {
+        margin: 19px 0 0 0;
+        min-height: 116px;
+        max-width: 100%;
+    }
+
+    .text_feature_link {
+        margin: 0 0 73px 0;
+    }
+
+    .features {
+        min-height: 610px;
+    }
+
+    .features_wrp {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .footer_top {
+        min-height: 614px;
+    }
+
+    .footer_wrp {
+
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .new_arrivals {
+        padding: 0 16px;
+        box-sizing: border-box;
+    }
+
+    .other_filters {
+        padding: 24px 0px 40px 380px;
+        margin-top: 0%;
+    }
+
+    .filter {
+        padding: 24px 16px 16px 16px;
+    }
+
+    .filter_btn {
+        margin: 0;
+    }
+
+    .products_item_catalog {
+        display: none;
+    }
+
+    .footer_bottom_wrp {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+
+    
+    .new_arrivals {
+        padding: 0 16px;
+    }
+
+    .filter_btn {
+        /* margin: 24px 0 0 0; */
+    }
+
+    .filter {
+        /* padding: 0 16px; */
+    }
+
+    .breadcrumbs_box {
+        padding: 0px 16px 0px 16px;
+    }
+
+    .pagination {
+        margin-top: 40px;
+        margin-bottom: 63px;
+    }
+
+    .new_arrivals_wrp {
+        /* padding: 0 0 0 16px; */
+    }
+    .filter_bar_wrp {
+        max-width: 768px;
+        width: 100%;
+    }
+.container1140 {
+    max-width: 768px;
+        width: 100%;
+}
+.products_item_prod:last-child {
+    display: none;
+}
+
+.input_registration {
+    min-width: 360px;
+}
+.registration {
+    padding: 64px 16px 96px 16px;
+}
+.registration_text {
+    margin-left: 22px;
+}
+.reg_text_header {
+    font-size: 16px;
+}
+.list_margin {
+    font-size: 16px;
+     }
+.cart_box {
+    padding: 59px 0px 250px 0px;
+    justify-content: center;
+}
+.cart_item {
+    max-width: 734px;
+} 
+.cross {
+    left: 430px;
+}
+.right_cart {
+    margin: 180px 0 0 0;
+}
+
+
+
+
+
+
+     
+}
+
+
+
+
+@media only screen and (max-width: 1024px) {
+    .products {
+        justify-content: space-around;
+    }
+}
+
+
+
+@media only screen and (max-width: 375px) {
+    .profile {
+        display: none;
+    }
+
+    .cart {
+        display: none;
+    }
+
+    .page_header {
+        padding: 0 16px 0 16px;
+    }
+
+    .brand_wrp_img {
+        display: none;
+    }
+
+    .top_text {
+        font-size: 46px;
+    }
+
+    .bottom_text {
+        font-size: 20px;
+    }
+
+    .brand_box {
+        margin-left: 83px;
+    }
+
+    .categories_item {
+        max-width: 343px;
+        width: 100%;
+        min-height: 247px;
+        margin: 0 16px 32px 16px;
+    }
+
+    .categories_item:nth-child(3) {
+        min-height: 247px;
+        margin: 0 0 32px 16px;
+    }
+
+    .categories {
+        margin: 0 0 64px 0;
+    }
+
+    .text_feature_link {
+        margin: 0 0 64px 0;
+    }
+
+    .btn_products_wrp {
+        margin: 40px 0 0 0;
+    }
+
+    .footer_wrp {
+        flex-direction: column;
+        min-height: 143px;
+        justify-content: center;
+    }
+
+    .feature_item {
+        align-items: center;
+    }
+
+    .social_icons {
+        margin: 8px 0 40px 0;
+    }
+
+    .footer_wrp_bottom {
+        max-width: 1140px;
+        min-height: 143px;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+        padding: 0 10px;
+        box-sizing: border-box;
+        align-items: center;
+    }
+
+    .copy-rigths {
+        margin: 0 0 9px 0;
+    }
+
+    .social_icons {
+        margin: 43px 0 40px 0;
+    }
+
+    .feature_item_top {
+        margin-top: 24px;
+        margin-bottom: 14px;
+    }
+
+    .subscribe_box {
+        max-width: 341px;
+    }
+
+    .footer_top {
+        min-height: 550px;
+    }
+.new_arrivals_wrp {
+    flex-direction: column;
+    align-items: center;
+}
+.filter {
+    width: 1px;
+}
+.other_filters {
+    padding: 24px 0px 40px 12px;
+}
+.slider {
+    min-height: 624px;
+}
+.women_collection_price {
+    min-width: 175px;
+    margin: 0px 0px 42px 0px;
+}
+.women_collection {
+    border: none;
+    border-bottom: 1px solid #EAEAEA;
+}
+.products_margin {
+    margin-top: 64px;
+    margin-bottom: 64px;
+}
+.choose_item {
+    font-size: 10px;
+}
+.features {
+    display: none;
+}
+.input_registration {
+    min-width: 335px;
+}
+.registration {
+    padding: 40px 16px 96px 16px;
+    flex-wrap: wrap;
+}
+.join_btn {
+    margin-bottom: 40px; 
+}
+.footer_top {
+    margin-top: 96px;
+}
+}
+
+
+
+
+@media only screen and (max-width: 750px) {
+    .brand_wrp_img {
+        display: none;
+    }
+
+    .categories_item {
+        max-width: 343px;
+        width: 100%;
+        min-height: 247px;
+        margin: 16px 0 32px 0px;
+    }
+
+    .categories_item:nth-child(3) {
+        min-height: 247px;
+        margin: 0 0 32px 0px;
+    }
+
+    .categories {
+        justify-content: center;
+    }
 }
